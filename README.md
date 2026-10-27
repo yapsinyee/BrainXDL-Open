@@ -1,6 +1,8 @@
 # BrainXDL-Open
 
-BrainXDL-Open is the open-source research framework developed as part of my PhD project, **“BrainXDL: Explainable Deep Learning for Personalized Prediction of Individual Behaviour and Neuropsychiatric Disorders from Brain Connectivity Networks,”** at Monash University (2026).
+BrainXDL is a PyTorch and PyTorch Geometric research framework for explainable deep learning on brain connectivity networks, developed as part of my PhD research at Monash University Malaysia.
+
+The repository accompanies the thesis “BrainXDL: Explainable Deep Learning for Personalized Prediction of Individual Behaviour and Neuropsychiatric Disorders from Brain Connectivity Networks” (2026).
 
 **Project website:** https://brainxdl.yapsinyee.com
 
