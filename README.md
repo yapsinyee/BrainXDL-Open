@@ -133,13 +133,3 @@ Noman, F., **Yap, S.-Y.**, Phan, R. C.-W., Ombao, H., & Ting, C.-M. (2022). Grap
 If you use BrainXDL-Open in your research, please cite the publication relevant to the method used and acknowledge the BrainXDL-Open software repository.
 
 Applied XAI is included as part of the BrainXDL research framework and does not currently have a separate publication citation.
-
-BrainXDL-Open `v0.1.0` does not currently have a project DOI.
-
-## Licence
-
-BrainXDL-Open source code is licensed under the BSD 3-Clause Licence; see [`LICENSE`](LICENSE).
-
-This software licence does not grant access to or redistribution rights for third-party or restricted datasets, checkpoints, or participant information.
-
-Contribution guidelines are available in [`CONTRIBUTING.md`](CONTRIBUTING.md).
