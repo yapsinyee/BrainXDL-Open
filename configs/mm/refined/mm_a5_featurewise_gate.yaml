@@ -1,0 +1,4 @@
+variant: mm_a5_featurewise_gate
+fusion: {type: gated_concat, gate: featurewise_sigmoid}
+connectivity_skip: {enabled: false, dim: 0}
+classifier: {type: mlp, outputs: 2, loss: cross_entropy}

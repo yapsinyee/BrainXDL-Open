@@ -1,0 +1,4 @@
+variant: mm_a3_gated_concat_skip
+fusion: {type: gated_concat, gate: scalar_softmax}
+connectivity_skip: {enabled: true, dim: 32, supported_dims: [16, 32, 64]}
+classifier: {type: mlp, outputs: 2, loss: cross_entropy}

@@ -1,0 +1,75 @@
+cff-version: 1.2.0
+message: >-
+  If you use BrainXDL-Open, cite the software and the relevant method
+  publication listed in references.
+title: BrainXDL-Open
+type: software
+version: 0.1.0
+license: BSD-3-Clause
+repository-code: https://github.com/yapsinyee/BrainXDL-Open
+url: https://brainxdl.yapsinyee.com
+authors:
+  - family-names: Yap
+    given-names: Sin-Yee
+references:
+  - type: conference-paper
+    title: >-
+      A Deep Probabilistic Spatiotemporal Framework for Dynamic Graph
+      Representation Learning with Application to Brain Disorder
+      Identification
+    authors:
+      - family-names: Yap
+        given-names: Sin-Yee
+      - family-names: Loo
+        given-names: Junn Yong
+      - family-names: Ting
+        given-names: Chee-Ming
+      - family-names: Noman
+        given-names: Fuad
+      - family-names: Phan
+        given-names: Raphaël C.-W.
+      - family-names: Razi
+        given-names: Adeel
+      - family-names: Dowe
+        given-names: David L.
+    collection-title: >-
+      Proceedings of the Thirty-Third International Joint Conference on
+      Artificial Intelligence
+    publisher:
+      name: International Joint Conferences on Artificial Intelligence Organization
+    year: 2024
+    month: 8
+    start: 5353
+    end: 5361
+    doi: 10.24963/ijcai.2024/592
+    url: https://doi.org/10.24963/ijcai.2024/592
+  - type: article
+    title: >-
+      Brain-MGF: Multimodal Graph Fusion Network for EEG-fMRI Brain
+      Connectivity Analysis Under Psilocybin
+    authors:
+      - family-names: Yap
+        given-names: Sin-Yee
+      - family-names: Noman
+        given-names: Fuad
+      - family-names: Loo
+        given-names: Junn Yong
+      - family-names: Stoliker
+        given-names: Devon
+      - family-names: Khajehnejad
+        given-names: Moein
+      - family-names: Phan
+        given-names: Raphaël C.-W.
+      - family-names: Dowe
+        given-names: David L.
+      - family-names: Razi
+        given-names: Adeel
+      - family-names: Ting
+        given-names: Chee-Ming
+    year: 2025
+    month: 11
+    identifiers:
+      - type: other
+        value: arXiv:2511.18325
+        description: arXiv identifier
+    url: https://arxiv.org/abs/2511.18325

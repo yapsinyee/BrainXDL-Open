@@ -1,0 +1,4 @@
+variant: mm_a0_original
+fusion: {type: adaptive_sum, gate: scalar_softmax}
+connectivity_skip: {enabled: false, dim: 0}
+classifier: {type: mlp, outputs: 2, loss: cross_entropy}

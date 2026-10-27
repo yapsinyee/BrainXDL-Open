@@ -1,0 +1,4 @@
+variant: mm_a4_gated_concat_skip_linear
+fusion: {type: gated_concat, gate: scalar_softmax}
+connectivity_skip: {enabled: true, dim: 32, supported_dims: [16, 32, 64]}
+classifier: {type: linear, outputs: 1, loss: bce_with_logits}

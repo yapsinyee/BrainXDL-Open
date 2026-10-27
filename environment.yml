@@ -1,0 +1,21 @@
+name: brainxdl-open
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy<2
+  - scipy
+  - scikit-learn
+  - pandas
+  - matplotlib
+  - tqdm
+  - dill
+  - pytorch
+  - pyg
+  - pyyaml
+  - pytest
+  - pip:
+      - -e .

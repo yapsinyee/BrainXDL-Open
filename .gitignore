@@ -1,0 +1,43 @@
+# Research data and prepared folds
+/data/
+/_local/
+
+# Generated outputs and checkpoints
+outputs/
+reports/
+results/
+runs/
+logs/
+plots/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.mat
+*.nii
+*.nii.gz
+*.fif
+*.edf
+*.log
+
+# Python, tests, packaging, and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Editors and operating systems
+.DS_Store
+.vscode/
+.idea/

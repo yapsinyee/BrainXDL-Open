@@ -1,0 +1,47 @@
+run_root: ./runs/st_nested_sweep
+data_root: ./data/folds_psiconnect_nested
+timeseries_root: /path/to/psiconnect/fmri_timeseries
+matched_eeg_root: /path/to/psiconnect/eeg_clean
+expected_rois: 200
+outer_splits: 5
+inner_splits: 5
+selection_metric: val_log_loss
+stage_a_top_k: 3
+search_seeds:
+  - 2026
+confirmation_seeds:
+  - 2026
+baseline_hidden_dim: 32
+baseline_dropout: 0.5
+baseline_loss_weight: 1.0
+graph_window_grid:
+  window_length:
+    - 20
+    - 30
+    - 40
+  window_stride:
+    - 5
+    - 10
+  graph_density:
+    - 0.10
+    - 0.20
+model_grid:
+  - name: baseline
+    use_existing_model_defaults: true
+  - name: wider
+    hidden_dim_multiplier: 2
+  - name: stronger_dropout
+    dropout: 0.5
+loss_weights:
+  - 1.0
+  - 1.5
+  - 2.0
+training:
+  num_epochs: 100
+  batch_size: 4
+  patience: 30
+  selection_metric: val_bce
+  strict_validation: true
+  no_test_during_training: true
+  no_sparse_on_cpu: true
+reporting_rule: docs/REPRODUCIBILITY.md
