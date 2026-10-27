@@ -2,7 +2,7 @@
 
 BrainXDL is a PyTorch and PyTorch Geometric research framework for explainable deep learning on brain connectivity networks, developed as part of my PhD research at Monash University Malaysia.
 
-Thesis: BrainXDL: Explainable Deep Learning for Personalized Prediction of Individual Behaviour and Neuropsychiatric Disorders from Brain Connectivity Networks
+Thesis: "BrainXDL: Explainable Deep Learning for Personalized Prediction of Individual Behaviour and Neuropsychiatric Disorders from Brain Connectivity Networks"
 
 **Project website:** https://brainxdl.yapsinyee.com
 
