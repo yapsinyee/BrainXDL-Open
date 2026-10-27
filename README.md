@@ -2,11 +2,18 @@
 
 BrainXDL is a PyTorch and PyTorch Geometric research framework for explainable deep learning on brain connectivity networks, developed as part of my PhD research at Monash University Malaysia.
 
-The repository accompanies the thesis “BrainXDL: Explainable Deep Learning for Personalized Prediction of Individual Behaviour and Neuropsychiatric Disorders from Brain Connectivity Networks” (2026).
+Thesis: BrainXDL: Explainable Deep Learning for Personalized Prediction of Individual Behaviour and Neuropsychiatric Disorders from Brain Connectivity Networks
 
 **Project website:** https://brainxdl.yapsinyee.com
 
 The repository contains reusable implementations, experiment entry points, synthetic examples, and tests. It does **not** contain participant-level data, prepared folds, trained checkpoints, or restricted study artefacts. Synthetic validation demonstrates software behaviour, not reproduction of a thesis result.
+
+
+Supervisory Team:
+- Associate Professor Chee-Ming Ting (Main Supervisor)
+- Associate Professor David Dowe
+- Professor Adeel Razi
+- Professor Raphaël Phan
 
 ## Research modules
 
