@@ -11,6 +11,19 @@ results were reproduced. Exact validation evidence is in `docs/VALIDATION.md`.
 The public framework can therefore be installed and tested independently, but
 it is not presented as a fully reproduced thesis archive.
 
+## Device and platform scope
+
+The implementation is designed around PyTorch/PyTorch Geometric device
+placement for CPU and NVIDIA CUDA execution. Apple MPS is an optional backend
+where required operations are supported. Reproducibility evidence for this
+release was collected on CPU only; CUDA and MPS have not been independently
+executed or validated.
+
+Device-specific kernels, sparse graph operations, library builds, and floating-
+point reduction order can produce small numerical differences. A future CUDA
+validation must record the GPU model, driver, PyTorch build, PyTorch-reported
+CUDA runtime, PyG version, test results, and scientific-regression tolerances.
+
 ## Split protocols
 
 Two protocols intentionally remain separate:
@@ -73,9 +86,12 @@ Generated files belong under ignored `runs/`, `outputs/`, `reports/`, or
 
 ## Known limitations
 
-- CUDA, MPS, Linux, and Windows are untested.
-- Pip and Conda resolve different tested PyTorch/PyG versions; neither is an
-  assertion of support outside macOS arm64 CPU.
+- CUDA and MPS execution are untested; skipped or unavailable accelerator tests
+  are not evidence of accelerator compatibility.
+- Linux and Windows have not received independent runtime validation.
+- Pip and Conda resolved different CPU-tested PyTorch/PyG versions. These
+  observations do not establish support for every intermediate version or
+  CUDA/PyG combination.
 - Optional XAI and harmonization extras were not installed.
 - Restricted-data experiments were not rerun.
 - Floating-point and sparse graph operations may vary by hardware/library.

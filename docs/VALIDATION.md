@@ -7,6 +7,9 @@ reproduced.
 ## Tested platform and environments
 
 Validation was performed on macOS 15.5 arm64 using CPU execution only.
+BrainXDL-Open is designed for CPU and NVIDIA CUDA execution, with optional MPS
+use where supported, but this design scope is broader than the completed test
+evidence.
 
 | Environment | Python | PyTorch | PyTorch Geometric | NumPy | SciPy | scikit-learn | pandas |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -16,6 +19,20 @@ Validation was performed on macOS 15.5 arm64 using CPU execution only.
 Both isolated installations passed `pip check`. Different PyTorch and PyTorch
 Geometric versions reflect the compatible ranges resolved by the two package
 managers, not a claim that every intermediate version is supported.
+
+### Validation status by execution target
+
+| Execution target | Design status | Independent validation status |
+|---|---|---|
+| CPU | Supported execution design | **Completed** in both recorded environments |
+| NVIDIA CUDA GPU | Supported execution design | **Not tested**; no NVIDIA GPU was available |
+| Apple MPS | Optional backend where operations are supported | **Not tested** |
+| Linux | Intended cross-platform environment | **Not tested** |
+| Windows | Intended cross-platform environment | **Not tested** |
+
+An unavailable or skipped accelerator check is not a successful CUDA or MPS
+validation. No GPU model, driver, or CUDA runtime result is reported because no
+CUDA execution was performed.
 
 ## Checks performed
 
@@ -59,7 +76,7 @@ fit/transform implementation remains future work.
 ## Not validated
 
 - Restricted-data thesis experiments and reported performance values.
-- CUDA or MPS execution.
+- NVIDIA CUDA or Apple MPS execution.
 - Linux or Windows.
 - Optional XAI neuroimaging/3D dependencies and optional `neuroCombat` runtime.
 - Cross-hardware bitwise reproducibility.
